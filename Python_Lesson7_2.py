@@ -1,4 +1,7 @@
-a=[1,2,4,5,6,7,8,9,10,11,14,15,21,17]
+import random
+
+count = int(input("Введите сколько чисел будет в массиве: "))
+a = [random.randint(1,10000) for _ in range(count)]
 print(a)
 a.insert(0,a[-1])
 del a[-1:]
